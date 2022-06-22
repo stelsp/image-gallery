@@ -1,0 +1,11 @@
+.item {
+  margin: 0;
+  padding: 0;
+  width: 366px;
+  height: 412px;
+  border-radius: 6px;
+}
+
+.item:focus {
+  border: 2px solid green;
+}

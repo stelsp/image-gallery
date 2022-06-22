@@ -5,19 +5,17 @@ import style from './style.module.css';
 
 const CardsList: FC = () => {
   const { data, category } = useAppSelector((store) => store.data);
-  // const test = data.forEach((el) => (el.name = `${el.name} 2`));
-  // console.log(test);
 
   return (
     <ul className={style.list}>
       {category === 'All'
-        ? data?.map((el, index) => {
-            return <Card el={el} index={index} />;
+        ? data?.map((el) => {
+            return <Card key={el._id} el={el} />;
           })
         : data
             ?.filter((el) => el.category === category)
-            .map((el, index) => {
-              return <Card el={el} index={index} />;
+            .map((el) => {
+              return <Card key={el._id} el={el} />;
             })}
     </ul>
   );
