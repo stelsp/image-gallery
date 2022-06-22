@@ -9,44 +9,33 @@ const Category: FC = () => {
   const dispatch = useAppDispatch();
   return (
     <>
-      <select
-        className={style.select}
-        onChange={(event) => dispatch(toggleCategory(event.target.value))}
-      >
-        <option>
-          <ButtonCategory category="All" />
-        </option>
-        <option value="Design" onClick={() => dispatch(toggleCategory('Design'))}>
-          <ButtonCategory category="Design" />
-        </option>
-        <option value="Branding">
-          <ButtonCategory category="Branding" />
-        </option>
-        <option value="Illustration">
-          <ButtonCategory category="Illustration" />
-        </option>
-        <option value="Motion">
-          <ButtonCategory category="Motion" />
-        </option>
-      </select>
+      <div className={style.select}>
+        <select onChange={(event) => dispatch(toggleCategory(event.target.value))}>
+          <option value="All">All</option>
+          <option value="Design">Design</option>
+          <option value="Branding">Branding</option>
+          <option value="Illustration">Illustration</option>
+          <option value="Motion">Motion</option>
+        </select>
+      </div>
 
-      {/* <ul className={style.list}>
-        <li>
+      <ul className={style.list}>
+        <li className={style.item}>
           <ButtonCategory category="All" />
         </li>
-        <li>
+        <li className={style.item}>
           <ButtonCategory category="Design" />
         </li>
-        <li>
+        <li className={style.item}>
           <ButtonCategory category="Branding" />
         </li>
-        <li>
+        <li className={style.item}>
           <ButtonCategory category="Illustration" />
         </li>
-        <li>
+        <li className={style.item}>
           <ButtonCategory category="Motion" />
         </li>
-      </ul> */}
+      </ul>
     </>
   );
 };

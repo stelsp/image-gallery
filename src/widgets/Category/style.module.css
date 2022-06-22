@@ -16,25 +16,67 @@
 }
 
 .select {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 329px;
-  min-height: 76px;
-  padding-inline: 23px;
-  font: var(--main-16-32);
-  color: var(--color-accent-dark);
-  opacity: 0.6;
-  outline: none;
-  border: none;
-
-  border: 1px solid #f3d1bf;
+  display: none;
 }
 
-.optgroup {
-  width: 100%;
-}
+@media screen and (max-width: 1040px) {
+  .list {
+    display: none;
+  }
 
-.option {
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    flex: 1;
+    padding: 13px 16px 14px;
+    color: var(--color-accent-dark);
+    opacity: 0.6;
+    background-color: var(--color-light);
+    background-image: none;
+    cursor: pointer;
+
+    font: var(--main-16-32);
+  }
+
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+
+  select > option {
+    background-color: var(--color-light);
+    color: var(--color-accent-dark);
+  }
+
+  /* Custom Select wrapper */
+  .select {
+    margin: 32px auto 48px;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    width: 329px;
+    height: 48px;
+    border: 1px solid #f3d1bf;
+    overflow: hidden;
+  }
+
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    color: #ef6d58;
+    transition: 0.25s all ease;
+    pointer-events: none;
+  }
+
+  /* Transition */
+  .select:hover::after {
+    color: #f3d1bf;
+  }
 }
