@@ -1,0 +1,19 @@
+.item {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  margin: 0;
+  font: var(--main-16-32);
+  color: var(--color-light);
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.link:hover {
+  cursor: pointer;
+  opacity: 1;
+  font-weight: 600;
+}

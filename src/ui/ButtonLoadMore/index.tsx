@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { loadMore } from '../../store/dataSlice';
 import { useAppDispatch } from '../../services/hooks';
+import { loadMore } from '../../store/dataSlice';
 
 const ButtonLoadMore: FC = () => {
   const dispatch = useAppDispatch();

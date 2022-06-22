@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--background-color-dark);
+  padding-block: 16px 58px;
+}
+
+@media screen and (max-width: 1040px) {
+  .header {
+    padding-block: 10px 79px;
+    padding-inline: 23px;
+  }
+}
