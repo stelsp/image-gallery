@@ -2,7 +2,6 @@
 
 body {
   margin: 0;
-  font-family: 'Epilogue', sans-serif;
 
   --background-color-dark: #28293e;
   --background-color-light: #fdf0e9;
@@ -14,7 +13,10 @@ body {
   --heading-56-64: 400 56px/64px Epilogue;
   --main-16-32: 400 16px/32px Epilogue;
   --card-40-48: 400 40px/48px Epilogue;
-  --button-14-0: 400 14px/10px Epilogue;
+  --button-14-0: 400 14px/32px Epilogue;
+
+  font-family: 'Epilogue', sans-serif;
+  background-color: var(--background-color-light);
 }
 
 code {

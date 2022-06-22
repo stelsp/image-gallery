@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { useAppDispatch } from '../../services/hooks';
 import { loadMore } from '../../store/dataSlice';
+import style from './style.module.css';
 
 const ButtonLoadMore: FC = () => {
   const dispatch = useAppDispatch();
@@ -8,7 +9,11 @@ const ButtonLoadMore: FC = () => {
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
     dispatch(loadMore());
   };
-  return <button onClick={handleClick}>LOAD MORE</button>;
+  return (
+    <button className={style.button} onClick={handleClick}>
+      load more
+    </button>
+  );
 };
 
 export default ButtonLoadMore;

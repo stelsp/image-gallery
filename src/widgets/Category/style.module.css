@@ -1,0 +1,40 @@
+.list {
+  margin: 0 auto;
+  padding: 0;
+  padding-block: 80px 75px;
+  list-style-type: none;
+  max-width: 563px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+}
+
+.select {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 329px;
+  min-height: 76px;
+  padding-inline: 23px;
+  font: var(--main-16-32);
+  color: var(--color-accent-dark);
+  opacity: 0.6;
+  outline: none;
+  border: none;
+
+  border: 1px solid #f3d1bf;
+}
+
+.optgroup {
+  width: 100%;
+}
+
+.option {
+}

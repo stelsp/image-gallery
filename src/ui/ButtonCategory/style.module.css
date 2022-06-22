@@ -1,0 +1,22 @@
+.button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-accent-dark);
+  opacity: 0.6;
+  transition: 0.1s;
+  font: var(--main-16-32);
+}
+
+.button:hover {
+  color: var(--color-accent-light);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.button:active {
+  transform: scale(1.1);
+}

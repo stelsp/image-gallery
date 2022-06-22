@@ -10,5 +10,14 @@
   outline: none;
   background-color: var(--background-color-dark);
   color: var(--color-light);
-  font: var(--button-14-0);
+  transition: 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(1.1);
 }

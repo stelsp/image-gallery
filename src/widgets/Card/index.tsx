@@ -26,7 +26,7 @@ const Card: FC<ICard> = ({ el }) => {
     if (selectedCard?._id === el._id) dispatch(selectCard(null));
   }, [dispatch, el._id, selectedCard]);
 
-  const handleToggle: React.MouseEventHandler<HTMLParagraphElement> = useCallback(
+  const handleToggle: React.MouseEventHandler<HTMLButtonElement> = useCallback(
     (e) => {
       e.stopPropagation();
       dispatch(toggleCategory(el.category));
@@ -42,8 +42,10 @@ const Card: FC<ICard> = ({ el }) => {
       style={{ backgroundImage: `url(${el.image})` }}
       onClick={handleClick}
     >
-      <p>{el.name}</p>
-      <p onClick={handleToggle}>{el.category}</p>
+      <h3 className={style.heading}>{el.name}</h3>
+      <button className={style.button} onClick={handleToggle}>
+        {el.category}
+      </button>
     </li>
   );
 };

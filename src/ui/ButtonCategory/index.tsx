@@ -1,10 +1,8 @@
 import { FC, useCallback } from 'react';
+import IButtonCategory from './type';
 import { useAppDispatch } from '../../services/hooks';
 import { toggleCategory } from '../../store/dataSlice';
-
-interface IButtonCategory {
-  category: string;
-}
+import style from './style.module.css';
 
 const ButtonCategory: FC<IButtonCategory> = ({ category }) => {
   const dispatch = useAppDispatch();
@@ -13,7 +11,11 @@ const ButtonCategory: FC<IButtonCategory> = ({ category }) => {
     dispatch(toggleCategory(category));
   }, [dispatch, category]);
 
-  return <button onClick={handleClick}>{category}</button>;
+  return (
+    <button className={style.button} onClick={handleClick}>
+      {category}
+    </button>
+  );
 };
 
 export default ButtonCategory;
