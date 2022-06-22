@@ -1,0 +1,23 @@
+.button {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  min-width: 138px;
+  min-height: 48px;
+  border: 1px solid #a4a4a4;
+  border-radius: 6px;
+  outline: none;
+  background-color: var(--background-color-dark);
+  color: var(--color-light);
+  transition: 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(1.1);
+}

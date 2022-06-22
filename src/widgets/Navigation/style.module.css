@@ -1,0 +1,41 @@
+.container {
+  margin-inline: auto;
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  width: 100%;
+  max-width: 522px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1190px) {
+  .container {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    justify-content: center;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .container button {
+    display: none;
+  }
+}

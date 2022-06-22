@@ -1,0 +1,28 @@
+.container {
+  margin-inline: auto;
+  padding-top: 82px;
+  max-width: 570px;
+  text-align: center;
+}
+.heading {
+  margin: 0;
+  padding-bottom: 34px;
+  font: var(--heading-72-80);
+  color: var(--color-light);
+}
+.text {
+  margin: 0;
+  font: var(--main-16-32);
+  color: var(--color-light);
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    padding-top: 79px;
+  }
+  .heading {
+    padding-bottom: 22px;
+    font: var(--heading-56-64);
+  }
+}
