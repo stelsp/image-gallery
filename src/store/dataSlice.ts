@@ -12,7 +12,7 @@ type TinitialState = {
 
 const initialState: TinitialState = {
   data,
-  category: 'All',
+  category: 'Show All',
   count: 1,
   selectedCard: null
 };

@@ -11,7 +11,7 @@ const Category: FC = () => {
     <>
       <div className={style.select}>
         <select onChange={(event) => dispatch(toggleCategory(event.target.value))}>
-          <option value="All">All</option>
+          <option value="Show All">Show All</option>
           <option value="Design">Design</option>
           <option value="Branding">Branding</option>
           <option value="Illustration">Illustration</option>
@@ -21,7 +21,7 @@ const Category: FC = () => {
 
       <ul className={style.list}>
         <li className={style.item}>
-          <ButtonCategory category="All" />
+          <ButtonCategory category="Show All" />
         </li>
         <li className={style.item}>
           <ButtonCategory category="Design" />

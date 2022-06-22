@@ -8,7 +8,7 @@ const CardsList: FC = () => {
 
   return (
     <ul className={style.list}>
-      {category === 'All'
+      {category === 'Show All'
         ? data?.map((el) => {
             return <Card key={el._id} el={el} />;
           })
