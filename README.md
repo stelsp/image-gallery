@@ -13,3 +13,17 @@
 + Redux-toolkit
 + TypeScript
 + CSS Modules
+
+## How to start localy?
+
+###
+
+```
+npm install
+```
+
+###
+
+```
+npm start
+```
